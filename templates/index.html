@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="20">
+
+    
+    <title>Meme website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<body class="body">
+    <h1 class="h1">A website to gather some memes</h1>
+    <p class="p">Here is your meme it will be refreshed in 30 second, enjoy </p>
+    <div class="p">
+        <p><img src="{{ meme_pic }}"></p>
+        <p> Current subreddit : {{ subreddit }}</p>
+    </div>
+</body>
+</html>
